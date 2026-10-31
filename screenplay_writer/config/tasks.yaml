@@ -1,0 +1,28 @@
+# config/tasks.yaml
+develop_story_task:
+  description: >
+    Take the core topic/idea: '{topic}' and develop a comprehensive 3-act story outline. 
+    Include character profiles for the protagonist and antagonist, a clear inciting incident, 
+    climax, and core themes.
+  expected_output: >
+    A detailed 3-act story outline containing character breakdowns, a plot synopsis, 
+    and scene-by-scene beat sheet.
+  agent: concept_artist
+
+write_screenplay_task:
+  description: >
+    Using the 3-act story outline provided by the Lead Story Developer, write the actual 
+    screenplay scenes. Ensure proper industry formatting (e.g., INT. COFFEE SHOP - DAY, 
+    character names centered, parentheticals used sparingly, and punchy dialogue).
+  expected_output: >
+    A draft of the screenplay sequence/scenes written in standard screenplay format.
+  agent: screenplay_writer
+
+polish_script_task:
+  description: >
+    Review the generated screenplay draft. Check for formatting errors, clunky dialogue, 
+    and sluggish pacing. Rewrite weak sections to elevate cinematic impact.
+  expected_output: >
+    A finalized, production-ready screenplay script in standard format, complete with 
+    a brief note on adjustments made.
+  agent: script_editor
